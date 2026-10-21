@@ -1,0 +1,16 @@
+name: "demo pipeline"
+
+on: 
+  push:
+    branches:
+        - master
+
+    
+
+jobs: 
+    demo-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: "prints hello world"
+              run: echo "Hello World"
+
